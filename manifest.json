@@ -1,0 +1,10 @@
+{
+  "name": "My Savings Tracker",
+  "short_name": "Savings",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090d0b",
+  "theme_color": "#166534",
+  "description": "Track daily savings toward your ₹3 lakh goal.",
+  "icons": []
+}
