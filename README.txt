@@ -1,11 +1,12 @@
-MY SAVINGS TRACKER
+SAVINGS STUDIO - UPDATED TRACKER
+Files: index.html, manifest.json, sw.js
+Features: premium dashboard, six-month savings chart, goal calculator, edit/delete transactions, in-app daily reminder, JSON backup export.
 
-Included:
-- index.html: working savings tracker, starting balance ₹41,000
-- manifest.json and sw.js: basic PWA files
+PRESERVING EXISTING DATA
+The updated app intentionally keeps the same localStorage key: mySavingsTrackerV1. If you publish these files to the same GitHub Pages URL, existing savings data stored in that browser should remain. Do not clear browser site data. Export a backup from the app before updating if possible.
 
-Important:
-1. Open index.html in a browser to use it locally. Savings entries are stored in that browser on that device.
-2. To install it as a home-screen app, these files need to be hosted on an HTTPS website first (for example, a static site hosting service). Then open the website in Chrome on Android and use menu ⋮ > Add to Home screen / Install app.
-3. This tracker does not connect to your bank or move money.
-4. Keep a separate backup of important entries; clearing browser data may erase local records.
+REMINDER LIMITATION
+The browser checks reminder time while the app is open. It cannot guarantee notifications when fully closed without a push-notification backend.
+
+PUBLISH UPDATE
+In the existing GitHub repository, upload/replace index.html, manifest.json, and sw.js at the repository root and commit changes. Wait for GitHub Pages to redeploy. If the installed app shows the old design, close/reopen it or refresh the site; the updated service worker cache version is v2.
