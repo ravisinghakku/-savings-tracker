@@ -1,12 +1,7 @@
-SAVINGS STUDIO - UPDATED TRACKER
-Files: index.html, manifest.json, sw.js
-Features: premium dashboard, six-month savings chart, goal calculator, edit/delete transactions, in-app daily reminder, JSON backup export.
+Savings Studio Update v3
 
-PRESERVING EXISTING DATA
-The updated app intentionally keeps the same localStorage key: mySavingsTrackerV1. If you publish these files to the same GitHub Pages URL, existing savings data stored in that browser should remain. Do not clear browser site data. Export a backup from the app before updating if possible.
+Features: reset balance to ₹0 with confirmation and undo backup, existing transaction history retained, monthly chart, edit/delete history, target calculator, in-app reminder checks while open, hide balance, 4-digit local PIN screen, colour themes, settings, export backup.
 
-REMINDER LIMITATION
-The browser checks reminder time while the app is open. It cannot guarantee notifications when fully closed without a push-notification backend.
+IMPORTANT: The 4-digit PIN is a basic privacy screen, not bank-grade security. It is stored locally in this browser. Reminder alerts are checked only while the app is open.
 
-PUBLISH UPDATE
-In the existing GitHub repository, upload/replace index.html, manifest.json, and sw.js at the repository root and commit changes. Wait for GitHub Pages to redeploy. If the installed app shows the old design, close/reopen it or refresh the site; the updated service worker cache version is v2.
+To update GitHub Pages: replace the existing repository files index.html, manifest.json and sw.js with these files, then commit changes. Keep the same site URL and do not clear browser data; this app retains the existing localStorage key mySavingsTrackerV1. Export a backup before making changes if possible.
